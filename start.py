@@ -20,3 +20,12 @@ def power_of_two(x):
         return True
     else:
         return False
+
+#____________________________________________________________________________________
+
+def find_smallest(numbers,to_return):
+    a = min(numbers)
+    if to_return == "value":
+        return a
+    if to_return == "index":
+        return numbers.index(a)
