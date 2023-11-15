@@ -38,3 +38,24 @@ def is_triangle(a, b, c):
         return False
     else:
         return True
+
+
+#____________________________________________________________________________________
+
+
+def find_outlier(integers):
+    j = 0
+    k = 0
+    g = []
+    f = []
+    for i in integers:
+        if i % 2 == 0:
+            j += 1
+            g.append(i)
+        else:
+            k += 1
+            f.append(i)
+    if j > k:
+        return int(''.join(map(str, f)))
+    elif k > j:
+        return int(''.join(map(str, g)))
