@@ -59,3 +59,12 @@ def find_outlier(integers):
         return int(''.join(map(str, f)))
     elif k > j:
         return int(''.join(map(str, g)))
+
+#____________________________________________________________________________________
+
+def array_diff(a, b):
+    for i in b:
+        if i in a:
+            while i in a:
+                a.remove(i)
+    return a
