@@ -76,3 +76,18 @@ def array_diff(a, b):
             while i in a:
                 a.remove(i)
     return a
+
+#____________________________________________________________________________________
+
+
+def is_prime(num):
+    j = 0
+    l = []
+    while num >= j:
+        j += 1
+        if num % j == 0:
+            l.append(j)
+    if len(l) == 2:
+        return True
+    else:
+        return False
