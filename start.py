@@ -98,3 +98,13 @@ def break_chocolate(n, m):
     if n == 0 or m == 0:
         return 0
     return n * m - 1
+
+#____________________________________________________________________________________
+
+def get_even_numbers(arr):
+    p = []
+    for i in arr:
+        if i % 2 == 0:
+            p.append(i)
+    return p
+        
