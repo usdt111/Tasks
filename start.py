@@ -107,4 +107,21 @@ def get_even_numbers(arr):
         if i % 2 == 0:
             p.append(i)
     return p
+
+
+#____________________________________________________________________________________
+
+
+def solve(s):
+    a = 0
+    b = 0
+    for i in s:
+        if i.isupper == True:
+            a += 1
+        else:
+            b += 1
+    if a > b:
+        return s.upper()
+    else:
+        return s.lower()
         
