@@ -124,4 +124,18 @@ def solve(s):
         return s.upper()
     else:
         return s.lower()
+
+#____________________________________________________________________________________
+
+def calculate(num1, operation, num2): 
+    if operation == "+":
+        return num1 + num2
+    if operation == "-":
+        return num1 - num2
+    if operation == "*":
+        return num1 * num2
+    if operation == "/" and num1 != 0 and num2 != 0:
+        return num1 / num2
+    else:
+        return None
         
