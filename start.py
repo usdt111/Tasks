@@ -139,3 +139,16 @@ def calculate(num1, operation, num2):
     else:
         return None
         
+#____________________________________________________________________________________
+
+def is_prime(num):
+    j = 1
+    a = []
+    while num >= j:
+        if num % j == 0:
+            a.append(j)
+        j += 1
+    if len(a) == 2:
+        return True
+    else:
+        return False
