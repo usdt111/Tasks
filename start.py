@@ -152,3 +152,24 @@ def is_prime(num):
         return True
     else:
         return False
+
+
+#____________________________________________________________________________________
+
+def show_sequence(n):
+    p = []
+    if 0 > n:
+        return f"{n}<0"
+    elif n == 0:
+        return "0=0"
+    a = []
+    
+    for i in range(n + 1):
+        a.append(i)
+    for i in range(n + 1):
+        if i == n:
+            p.append(i)
+        else:
+            p.append(f"{i}+")
+    l = sum(a)
+    return f"{''.join(map(str, p))} = {l}"
