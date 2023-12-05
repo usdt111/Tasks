@@ -173,3 +173,9 @@ def show_sequence(n):
             p.append(f"{i}+")
     l = sum(a)
     return f"{''.join(map(str, p))} = {l}"
+
+#____________________________________________________________________________________
+
+
+def digits(n):
+    return len(str(n))
