@@ -179,3 +179,15 @@ def show_sequence(n):
 
 def digits(n):
     return len(str(n))
+
+#____________________________________________________________________________________
+
+
+def remove_url_anchor(url):
+    a = []
+    for i in url:
+        if i == "#":
+            break
+        else:
+            a.append(i)
+    return ''.join(map(str, a))
