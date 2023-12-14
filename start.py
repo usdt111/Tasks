@@ -199,3 +199,11 @@ def is_leap_year(year):
         return True
     else:
         return False
+
+#____________________________________________________________________________________
+
+def min_value(digits):
+    digits = list(set(digits))
+    digits = sorted(digits)
+    digits = ''.join(map(str, digits))
+    return int(digits)
