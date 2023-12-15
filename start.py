@@ -207,3 +207,16 @@ def min_value(digits):
     digits = sorted(digits)
     digits = ''.join(map(str, digits))
     return int(digits)
+
+#____________________________________________________________________________________
+
+def switcheroo(s):
+    a = []
+    for i in s:
+        if i == "b":
+            a.append("a")
+        elif i == "a":
+            a.append("b")
+        else:
+            a.append(i)
+    return ''.join(map(str, a))
